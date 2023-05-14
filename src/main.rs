@@ -1,6 +1,6 @@
-use env_logger::Env;
 use std::net::TcpListener;
 
+use env_logger::Env;
 use sqlx::PgPool;
 use zero2prod::{configuration::get_configuration, startup::run};
 
