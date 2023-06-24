@@ -31,8 +31,8 @@ async fn subscribe_returns_400_when_data_is_missing() {
     let client = reqwest::Client::new();
     let test_cases = vec![
         ("name=le%20guin", "missing the email"),
-        ("email=ursula_le_guim%40gmail.com", "missing the name"),
-        ("", "missin both name and email"),
+        ("email=ursula_le_guin%40gmail.com", "missing the name"),
+        ("", "missing both name and email"),
     ];
 
     for (invalid_body, error_massage) in test_cases {
